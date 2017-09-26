@@ -92,7 +92,7 @@ body {
 }
 .intro__data{
     margin: 0 auto;
-    margin-top: calc(50vh - 170px);
+    margin-top: calc(50vh - 190px);
 }
 .profileimg{
     width: 150px;
@@ -340,7 +340,7 @@ body {
     }
     .intro__data{
         text-align: center;
-        margin-top: calc(50vh - 121px);
+        margin-top: calc(50vh - 141px);
     }
     .profileimg{
         width: 200px;
