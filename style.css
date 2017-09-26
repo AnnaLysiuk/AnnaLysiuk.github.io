@@ -285,6 +285,10 @@ body {
     .container {
         padding: 55px 55px;
     }
+    .profileimg{
+        width: 200px;
+        height: 200px;
+    }
     .info__data--main{
         text-align: justify;
     }
