@@ -6,23 +6,25 @@
         <meta name="description" content="Curriculum vitae Anna Łysiuk"/>
         <title>Anna Łysiuk</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <link type="text/css" href="style.css" rel="stylesheet"></link>
+        <link type="text/css" href="style.css" rel="stylesheet" />
         <script type="text/javascript" src="script.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
     <body>
         <header class="navigation">
-            <a href="#intro"><img class="navigation__logo" src="img/logo.png" alt="logo AL" height="40px" /></a>
-            <button class="navigation__button" data-js="js__nav"><span></span><span></span><span></span></button>
-            <nav class="navigation__list">
-            <ul>
-                <li><a class="navigation__link" data-js="js__link" href="#omnie">o mnie</a></li>
-                <li><a class="navigation__link" data-js="js__link" href="#doswiadczenie">doświadczenie/projekty</a></li>
-                <li><a class="navigation__link" data-js="js__link" href="#umiejetnosci">umiejętności</a></li>
-                <li><a class="navigation__link" data-js="js__link" href="#kontakt">kontakt</a></li>
-            </ul>
-            </nav>
+            <div class="container">
+                <a href="#intro"><img class="navigation__logo" src="img/logo.png" alt="logo AL" height="40px" /></a>
+                <button class="navigation__button" data-js="js__nav"><span></span><span></span><span></span></button>
+                <nav class="navigation__list">
+                <ul>
+                    <li><a class="navigation__link" data-js="js__link" href="#omnie">o mnie</a></li>
+                    <li><a class="navigation__link" data-js="js__link" href="#doswiadczenie">doświadczenie/projekty</a></li>
+                    <li><a class="navigation__link" data-js="js__link" href="#umiejetnosci">umiejętności</a></li>
+                    <li><a class="navigation__link" data-js="js__link" href="#kontakt">kontakt</a></li>
+                </ul>
+                </nav>
+            </div>
         </header>
 
         <section class="intro" id="intro">
@@ -31,7 +33,7 @@
                     <div class="profileimg"></div>
                     <div class="intro__data--main">
                         <h1 class="header--main">Anna Łysiuk</h1>
-                        <h2 class="header--secondary">RF designer<br/>&<br/>front-end<br/>developer</h2>
+                        <h2 class="header--secondary">front-end<br/>developer<br/>&<br/>RF designer</h2>
                     </div>
                 </div>
             </div>
@@ -42,7 +44,7 @@
                 <h2 class="header">poznaj mnie</h2>
                 <div class="info__data">
                     <div class="info__data--main">
-                        <span>Okres studiów i doktoratu poświęciłam na rozwijane swoich umiejętności w zakresie techniki wysokich częstotliwości. Zajmowałam się projektowaniem biernych struktur mikrofalowych, głównie anten mikropaskowych, technikami radiowo-światłowodowymi oraz pomiarami w&nbspzakresie wysokich częstotliwości. Powrót do rodzinnego miasta i&nbspbezskuteczne poszukiwanie pracy w zawodzie skłoniło mnie do zmiany branży. Ukończyłam studia podyplomowe na kierunku Front-End Development i&nbspaktualnie z tym wiążę swoją przyszłość. Staram się sukcesywnie poszerzać swoją wiedzę w tym zakresie i&nbspposzukiwać pierwszej pracy by zdobyć niezbędne doświadczenie.</span>
+                        <span>Z wykształcenia inżynier w dziedzinie wysokich częstotliwości. Połowę zawodowego życia spędziłam projektując, wykonując i mierząc bierne komponenty mikrofalowe - głównie anteny. Specjalizowałam się w tzw. systemach radiowo-światłowodowych. Obecnie front-end developer z rocznym doświadczeniam zawodowym, po ukończonych studiach podyplomowych w tym kierunku. Prywatnie żona, matka dwóch synów, osoba lubiąca aktywny tryb życia i uprawianie sportów (niestety coraz rzadziej).</span>
                     </div>
                     <h3 class="field__define">Poznaj mnie w dziedzinie</h3><h3 class="rf" data-js="js__field__rf">RF</h3><h3 class="front active" data-js="js__field__front">Front-End</h3>
                 </div>
@@ -51,25 +53,23 @@
 
         <section class='experience' id="doswiadczenie">
             <div class='container'>
-                 <h2 class="header">przykładowe realizacje</h2>
+                 <h2 class="header">doświadczenie</h2>
                  <div class="experience__data">
-                     <div class="data--rf" data-js="js__box__rf">
+                    <div class="data--rf" data-js="js__box__rf">
                         <h3 class="header rf__header">RF</h3>
-                        <div class="data__box"><div><b>2016</b></div><div class="data__text"> Politechnika Warszawska, wykonawca zlecenia "Wireless and wired radio-fibre link" dla Harbin Institute of Technology Engineering Equipment Co.,LTD, Chiny. Projekt obejmował zaprojektowanie, wykonanie i sporządzenie pomiarów dla zestawu elementów łącza radiowo-światłowodowego tj. modułu nadawczego z diodą laserową, modułu odbiorczego z fotodiodą oraz dwkierunkowej anteny "fotonicznej".</div></div>
-                        <div class="data__box"><div><b>2012 - 2013</b></div><div class="data__text"> Politechnika Warszawska, współpraca przy projekcie „Hardware development for the FLASH and the XFEL LLRF and synchronization system” w centrum badawczym DESY. Projekt obejmował opracowanie metody kalibracji w&nbspautomatycznym systemie pomiarowym oraz uruchomienie systemu do automatycznego pomiaru Główne zadanie polegało na przygotowaniu skryptu w Matlabie umożliwiającego wyeliminowanie wpływu kabli i połączeń na wynik pomiaru układów RF takich jak np. 10-kanałowy mieszacz.</div></div>
-                        <div class="data__box"><div><b>2010 - 2012</b></div><div class="data__text"> Politechnika Warszawska, główny wykonawca projektu MNiSzW pt. "Nowa generacja anten fotonicznych dla sieci transmisji radiowo-światłowodowej". Projekt polegał na przygotowaniu rozwiązań kilku anten "fotonicznych" nadawczych, odbiorczych i dwukierunkowych oraz opracowaniu metody pomiaru i określenia parametrów tych anten.</div></div>               
+                        <div class="data__box"><div class="title"><b>2016</b></div><div class="data__text"> Politechnika Warszawska, wykonawca zlecenia "Wireless and wired radio-fibre link" dla Harbin Institute of Technology Engineering Equipment Co.,LTD, Chiny. Projekt obejmował zaprojektowanie, wykonanie i sporządzenie pomiarów dla zestawu elementów łącza radiowo-światłowodowego.</div></div>
+                        <div class="data__box"><div class="title"><b>2012 - 2013</b></div><div class="data__text"> Politechnika Warszawska, współpraca przy projekcie „Hardware development for the FLASH and the XFEL LLRF and synchronization system” w centrum badawczym DESY. Projekt obejmował opracowanie metody kalibracji w&nbspautomatycznym systemie pomiarowym oraz uruchomienie systemu do automatycznego pomiaru.</div></div>
+                        <div class="data__box"><div class="title"><b>2010 - 2012</b></div><div class="data__text"> Politechnika Warszawska, wykonawca projektu pt. "Nowa generacja anten fotonicznych dla sieci transmisji radiowo-światłowodowej". Projekt polegał na przygotowaniu rozwiązań kilku anten "fotonicznych" nadawczych, odbiorczych i dwukierunkowych oraz opracowaniu metody pomiaru.</div></div>               
                     </div>
                     <div class="data--front active" data-js="js__box__front">
                         <h3 class="header front__header">Front-End</h3>
-                        <div class="data__box"><div class="icon portfolio__icon"></div><div class="data__text">Portfolio, które właśnie przeglądasz wykorzystuje HTML5, CSS3 i czysty JS. Wykorzystana została technika RWD dla trzech zakresów rozdzielczości. <hr/><a href="https://github.com/AnnaLysiuk/AnnaLysiuk.github.io" class="project__link">AnnaLysiuk/AnnaLysiuk.github.io</a></div></div>
-                        <div class="data__box"><div class="icon cut__icon"></div><div class="data__text">Kodowanie przykładowej strony na podstawie projektów graficznych dla 3 rozdzielczości. Wykorzystano HTML5, CSS3, RWD, SASS, npm, Gulp. Projekt wykorzystuje <a href="https://github.com/maciejkorsan/frontendkickstarter">frontendkickstarter</a> Macieja Korsana. Zadanie i grafiki przygotowane przez firmę Infinity Group. <hr/><a href="http://github.com/AnnaLysiuk/responsive_Web" class="project__link">AnnaLysiuk/responsive_Web</a></div></div>
-                        <div class="data__box"><div class="icon todo__icon"></div><div class="data__text">Prosta aplikacja ToDo z wykorzystaniem React i biblioteki <a href="https://www.muicss.com/">MUICSS</a>. Umożliwia dodanie, usuwanie, filtrowanie i wyświetlanie szczegółów dla każdego ToDo. <hr/><a href="https://github.com/AnnaLysiuk/ToDo_App" class="project__link">AnnaLysiuk/ToDo_App</a></div></div> 
-                        <div class="data__box add"><div class="icon">+</div><div class="data__text add" data-js="js__add__experience">I wiele więcej... niedługo</div></div>            
+                        <div class="data__box"><div class="icon stack__icon"></div><div class="data__text">Od czerwca 2018 do teraz związana z&nbspfirmą Aexol/IT4Food. W&nbspkomeryjnych projektach korzystam głównie z React + typescript, biblioteki unstated  to zarządzania stanem aplikacji, slothking + mongoDB po stronie backendu, typestyle do zarządzania stylami. Poniżej projekty z&nbspmoich początków we frontendzie.</div></div>
+                        <div class="data__box"><div class="icon portfolio__icon"></div><div class="data__text">Portfolio, które właśnie przeglądasz wykorzystuje HTML5, CSS3 i czysty JS z RWD. <hr/><a href="https://github.com/AnnaLysiuk/AnnaLysiuk.github.io" class="project__link">AnnaLysiuk/AnnaLysiuk.github.io</a></div></div>
+                        <div class="data__box"><div class="icon cut__icon"></div><div class="data__text">Kodowanie przykładowej strony na podstawie projektów graficznych przygotowanych przez Infiniti Group . Wykorzystano HTML5, CSS3, RWD, SASS, npm, Gulp. Projekt wykorzystuje <a href="https://github.com/maciejkorsan/frontendkickstarter" style="cursor: pointer">frontendkickstarter</a> Macieja Korsana. <hr/><a href="http://github.com/AnnaLysiuk/responsive_Web" class="project__link">AnnaLysiuk/responsive_Web</a></div></div>
+                        <div class="data__box"><div class="icon todo__icon"></div><div class="data__text">Oklepana i prosta aplikacja ToDo z&nbspwykorzystaniem React i&nbspbiblioteki <a href="https://www.muicss.com/">MUICSS</a>. Umożliwia dodanie, usuwanie, filtrowanie i&nbspwyświetlanie szczegółów dla każdego ToDo. <hr/><a href="https://github.com/AnnaLysiuk/ToDo_App" class="project__link">AnnaLysiuk/ToDo_App</a></div></div> 
                     </div>
                 </div>
-
             </div>
-            
         </section>
 
         <section class='abilities' id="umiejetnosci">
@@ -78,22 +78,20 @@
                 <div class="abilities__data">
                     <div class="data--rf" data-js="js__box__rf">
                         <h3 class="header rf__header">RF</h3>
-                        <div class="data__box"><div class="icon matlab__icon"></div><div class="data__text">Z pakietu Matlab korzystałam głównie do obróbki i prezentacji wyników pomiarów oraz komunikacji ze sprzętem pomiarowym celem jego zdalnego uruchamiania. Korzystałam także z możliwości obiektowego programowania w Matlabie.</div></div>
-                        <div class="data__box"><div class="icon feko__icon"></div><div class="data__text">Programu FEKO używałam do projektowania anten głównie mikropaskowych, ale także do symulacji zachowania elementów toru radiowo-światłowodowego np. obudów diod laserowych czy fotodiod. </div></div>
-                        <div class="data__box"><div class="icon awr__icon"></div><div class="data__text">Oprogramowanie AWR wykorzystywałam do projektowania biernych struktur mikrofalowych takich jak linie doprowadzające, dzielniki mocy, filtry, układy dopasowujące. W stopniu podstawowym znam także oprogramowania ADS oraz Altium Designer.</div></div>
-                        <div class="data__box"><div class="icon sprzet__icon"></div><div class="data__text">Posiadam wysokie umiejętności w posługiwaniu się mikrofalowym sprzętem pomiarowym: analizatorami widma, sygnałów, obwodów, generatorami mikrofalowymi i sygnałów, oscyloskopami. Przez kilka lat prowadziłam laboratoria studenckie z przedmiotów "Podstawy Radiokomunikacji" oraz współautorskiego przedmiotu "Nowe techniki transmisji radiowej".</div></div>                
+                        <div class="data__box"><div class="icon matlab__icon"></div><div class="data__text">Z pakietu Matlab korzystałam głównie do obróbki i prezentacji wyników pomiarów oraz komunikacji ze sprzętem pomiarowym.</div></div>
+                        <div class="data__box"><div class="icon feko__icon"></div><div class="data__text">Programu FEKO używałam do projektowania anten głównie mikropaskowych, ale także do symulacji zachowania elementów toru radiowo-światłowodowego.</div></div>
+                        <div class="data__box"><div class="icon awr__icon"></div><div class="data__text">Oprogramowanie AWR wykorzystywałam do projektowania biernych struktur mikrofalowych. W stopniu podstawowym znam także oprogramowania ADS oraz Altium Designer.</div></div>
+                        <div class="data__box"><div class="icon sprzet__icon"></div><div class="data__text">Umiem posługiwać się mikrofalowym sprzętem pomiarowym: analizatorami widma, sygnałów, obwodów, generatorami mikrofalowymi i sygnałów. Przez kilka lat prowadziłam laboratoria studenckie z przedmiotów "Podstawy Radiokomunikacji" oraz współautorskiego przedmiotu "Nowe techniki transmisji radiowej".</div></div>            
                     </div>
                     <div class="data--front active" data-js="js__box__front">
                         <h3 class="header front__header">Front-End</h3>
-                        <div class="data__box"><div class="icon html__icon"></div><div class="data__text">Stosuję tradycyjne bloki, listy, elementy formularza, tagi audio i video. Korzystam z podziału strony www z wykorzystaniem header, nav, aside, section, footer. Staram się stosować nazewnictwo klas zgodnie z metodologią BEM.</div></div>
-                        <div class="data__box"><div class="icon css__icon"></div><div class="data__text">Potrafię stworzyć proste animacje z wykorzystaniem transform, transtition i animate, korzystać z svg animując je. Korzystam z media queries, znam metodologię sass. </div></div>
-                        <div class="data__box"><div class="icon js__icon"></div><div class="data__text">Programowanie zaczynałam od C, C++, Javy, które umiem w stopniu podstawowym i Matlaba, z którego korzystałam intensywnie przez kilka lat. Potrafię pisać w czystym JS, a także z wykorzystaniem JQuery. Obecnie uczę się biblioteki React JS. </div></div>
-                        <div class="data__box"><div class="icon photoshop__icon"></div><div class="data__text">Potrafię stworzyć prosty projekt graficzny. Umiem odczytać parametry elementów projektu przygotowanego przez grafika.</div></div>
-                        <div class="data__box add"><div class="icon">+</div><div class="data__text add" data-js="js__add__ability">I wiele więcej... niedługo</div></div>       
+                        <div class="data__box"><div class="icon js__icon"></div><div class="data__text">Potrafię pisać w czystym JS, a także z&nbspwykorzystaniem JQuery. Obecnie korzystam głównie z bliblioteki React, szlifując pisanie w typescript. Programowanie zaczynałam od C, C++, Javy, które umiem w stopniu podstawowym i Matlaba, z którego korzystałam intensywnie przez kilka lat.</div></div>
+                        <div class="data__box"><div class="icon html__icon"></div><div class="data__text">Stosuję tradycyjne bloki, listy, elementy formularza, tagi audio i video.</div></div>
+                        <div class="data__box"><div class="icon css__icon"></div><div class="data__text">Potrafię stworzyć proste animacje, korzystać z svg animując je. Obecnie korzystam głównie z biblioteki typestyle.</div></div>
+                        <div class="data__box"><div class="icon photoshop__icon"></div><div class="data__text">Potrafię stworzyć prosty projekt graficzny. Umiem korzystać z projektu przygotowanego przez grafika. Obecnie do współpracy z&nbspgrafikami wykorzystuję Figmę.</div></div>
                     </div>
                 </div>
             </div>
-            
         </section>
 
         <section class='contact' id="kontakt">
@@ -102,7 +100,7 @@
                 <div class="contact__data">
                     <div class="data__box"><div class="icon city__icon"></div><div>Białystok</div></div>
                     <div class="data__box"><div class="icon mail__icon"></div><div><a href="mailto:anna.lysiuk86@gmail.com">anna.lysiuk86@gmail.com</a></div></div>
-                    <div class="data__box"><div class="icon phone__icon"></div><div>+48 663 642 224</div></div>
+                    <div class="data__box"><div class="icon phone__icon"></div><div><a href="tel:663642224">+48 663 642 224</a></div></div>
                     <div class="data__box"><div class="icon github__icon"></div><div><a href="http://github.com/AnnaLysiuk" class="github__link">github.com/AnnaLysiuk</a></div></div>
                 </div>
             </div>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=PT Sans');
+
 * {
     box-sizing: border-box;
 }
@@ -6,7 +8,7 @@ html {
     padding: 0;
 }
 body {
-    font-family: Georgia, Serif;
+    font-family: 'PT Sans', 'Georgia', 'Serif';
     margin: 0;
     font-size: 16px;
 }
@@ -14,13 +16,17 @@ body {
     padding: 55px 25px;
 }
 .navigation {
-    height: 40px;
+    height: 60px;
     position: fixed;
     top: 0;
     z-index: 10;
     width: 100%;
     background-color: black;
-    padding: 0 25px;
+}
+.navigation > .container{
+    padding-top: 10px;
+    margin: 0;
+    margin: 0 auto;
 }
 .navigation_logo{
     float: left;
@@ -37,6 +43,7 @@ body {
     width: 50px;
     height: 40px;
     position: relative;
+    cursor: pointer;
 }
 .navigation__button span {
     display: block;
@@ -86,7 +93,8 @@ body {
 }
 .intro {
     height: 100vh;
-    background-color: black;
+    /* background-color: black; */
+    background-image: linear-gradient(25deg, #ff9205 -50%, black 53.38%);
     background-size: contain;
     position: relative;
 }
@@ -118,8 +126,9 @@ body {
 .header {
     font-size: 26px;
     line-height: 30px;
+    text-transform: uppercase;
     margin: 0;
-    margin-bottom: 20px;
+    margin: 20px 0;
     padding: 0;
     text-align: center;
 }
@@ -130,7 +139,7 @@ body {
     color: white;
     font-size: 26px;
     margin: 0;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
 }
 .header--secondary{
     color: white;
@@ -138,18 +147,23 @@ body {
     padding: 0 50px;
     margin: 0;
 }
-.experience > .container{
+.experience{
     background-color: #e6e6e6; 
 }
 .field__define, .rf, .front{
     color: #e6e6e6;
-    display: inline-block;
+    /* display: inline-block; */
     margin: 0;
+    margin-top: 20px;
     padding: 0;
     padding-left: 5px;
 }
 .field__define{
     color: black;
+}
+.rf, .front{
+    cursor: pointer;
+    display: block;
 }
 .rf.active, .front.active{
     color: #ff9205;
@@ -159,7 +173,7 @@ body {
     display: none;
 }
 .data--front.active, .data--rf.active{
-    display: block;
+    display: table-cell;
 }
 .data__box{
     background-color: white;
@@ -168,6 +182,9 @@ body {
     font-size: 20px;
     line-height: 26px;
     text-align: center;
+}
+.data__box > .title{
+    margin-right: 10px;
 }
 .data__box.add{
     display: none;
@@ -180,6 +197,7 @@ body {
 }
 .project__link{
     font-size: 14px;
+    cursor: pointer;
 }
 .abilities__data > .data--front > .data__box, .abilities__data > .data--rf > .data__box{
     background-color: #e6e6e6; 
@@ -217,11 +235,16 @@ body {
 .photoshop__icon{
     background: url('img/photoshop.png') top center;
 }
-.contact > .container{
-    margin: 0;
-    background-color: #e6e6e6;
-    text-align: center;
+.stack__icon{
+    background: url('img/stack.png') top center;
 }
+.contact{
+    background-color: #e6e6e6;
+}
+/* .contact > .container{
+    margin: 0;
+    text-align: center;
+} */
 .contact__container{
     display: inline-block;
     padding: 20px 20px;
@@ -241,6 +264,7 @@ body {
 .data__box a{
     text-decoration: none;
     color: black;
+    cursor: pointer;
 }
 .footer__data {
     height: 70px;
@@ -314,17 +338,31 @@ body {
         display: inline-block;
         color: white;
     }
-    .navigation{
-        padding: 0 55px;
+    .navigation > .container{
+        padding: 0 25px;
     }
 }
 
 @media (min-width: 1280px){
+    .container{
+        width: 80%;
+        max-width: 1330px;
+        margin: 0 auto;
+    }
     .navigation{
         width: 100%;
+        height: 60px;
+    }
+    .navigation > .container{
+        width: 80%;
+        max-width: 1330px;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        height: 100%;
+        padding: 0 55px;
+        margin: 0;
+        margin: 0 auto;
     }
     .navigation__button{
         display: none;
@@ -338,9 +376,13 @@ body {
         display: inline-block;
         padding-left: 20px;
     }
+    .navigation_logo{
+        width: 40%
+    }
     .navigation__list{
+        width: 60%;
         display: flex;
-        align-items: center;
+        justify-content: flex-end;
     }
     .intro__data{
         text-align: center;
@@ -399,7 +441,7 @@ body {
         visibility: hidden;
         background-color: black;
         position: absolute;
-        top: 40px;
+        top: 60px;
         left: 0;
         height: 100vh;
         width: 100vw;

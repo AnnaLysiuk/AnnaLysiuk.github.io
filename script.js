@@ -52,18 +52,4 @@ window.addEventListener("load", function() {
 	function addClass(item){
 		item.classList.add("active");
 	}
-	
-	isResized();
-	window.addEventListener("resize", isResized);
-
-	function isResized(){
-		var rf = document.getElementsByClassName("data--rf");
-		var front = document.getElementsByClassName("data--front");
-		var addExpirience = document.querySelector("[data-js='js__add__experience']");
-		var addAbility = document.querySelector("[data-js='js__add__ability']");
-		var diff = rf[0].offsetHeight - front[0].offsetHeight;
-		addExpirience.style.lineHeight = (diff+48).toString() + "px";
-		var diff2 = rf[1].offsetHeight - front[1].offsetHeight;
-		addAbility.style.lineHeight = (diff2+48).toString() + "px";
-	}
 });
