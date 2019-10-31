@@ -21,7 +21,7 @@ body {
     top: 0;
     z-index: 10;
     width: 100%;
-    background-color: black;
+    background-color: black
 }
 .navigation > .container{
     padding-top: 10px;
@@ -93,9 +93,33 @@ body {
 }
 .intro {
     height: 100vh;
-    /* background-color: black; */
-    background-image: linear-gradient(25deg, #ff9205 -50%, black 53.38%);
-    background-size: contain;
+    /* background: linear-gradient(117deg, rgba(2,0,36,1) 2%, rgba(2555,146,5,1) 83%); */
+    /* background: linear-gradient(-25deg, #ff9205 -50%, black 53.38%); */
+    background:
+        repeating-linear-gradient(
+            -45deg,
+            transparent 0,
+            transparent 25%,
+            #915301 0,
+            #915301 50%
+       ),
+       repeating-linear-gradient(
+            45deg,
+            transparent 0,
+            transparent 25%,
+            #ff9205 0,
+            #ff9205 50%
+        ),
+        repeating-linear-gradient(
+            transparent 0,
+            transparent 25%,
+            #f7a73e 0,
+            #f7a73e 50%
+        ),linear-gradient(#292826, #47433b),
+        linear-gradient(#292826, #ff9205, #292826);
+        /* radial-gradient(#000000 5%, #ff9205); */
+    background-blend-mode: multiply;
+    background-size: 100px 100px, 100px 100px, 100px 100px, 100% 100%, 100% 100%;
     position: relative;
 }
 .intro__data{
@@ -152,7 +176,6 @@ body {
 }
 .field__define, .rf, .front{
     color: #e6e6e6;
-    /* display: inline-block; */
     margin: 0;
     margin-top: 20px;
     padding: 0;
@@ -182,6 +205,9 @@ body {
     font-size: 20px;
     line-height: 26px;
     text-align: center;
+    border: 1px solid #DFE6F7;
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
 }
 .data__box > .title{
     margin-right: 10px;
@@ -193,7 +219,8 @@ body {
     width: 64px;
     height: 64px;
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 5px;
+    transform: scale(0.7);
 }
 .project__link{
     font-size: 14px;
@@ -241,10 +268,6 @@ body {
 .contact{
     background-color: #e6e6e6;
 }
-/* .contact > .container{
-    margin: 0;
-    text-align: center;
-} */
 .contact__container{
     display: inline-block;
     padding: 20px 20px;
@@ -339,7 +362,8 @@ body {
         color: white;
     }
     .navigation > .container{
-        padding: 0 25px;
+        padding: 0 55px;
+        margin-top: 10px;
     }
 }
 
@@ -409,30 +433,18 @@ body {
     .data--front{
         width: calc(50vw - 77.5px);
         display: table-cell;
+        border-right: 55px solid #e6e6e6;
     }
     .data--rf{
         display: table-cell;
         width: calc(50vw - 27.5px);
-        border-right: 55px solid #e6e6e6;
     }
-    .abilities__data > .data--rf{
+    .abilities__data > .data--front{
         border-right: 55px solid white;
     }
-    .data__box.add{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .data__box.add > .icon{
-        line-height: 64px;
-        font-size: 64px;
-    }
     .contact__data{
-        display: table;
-    }
-    .contact__data > .data__box{
-        width: calc(50vw);
-        display: table-cell;
+        display: flex;
+        justify-content: space-between;
     }
     
 }
