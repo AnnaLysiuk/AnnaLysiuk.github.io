@@ -93,8 +93,6 @@ body {
 }
 .intro {
     height: 100vh;
-    /* background: linear-gradient(117deg, rgba(2,0,36,1) 2%, rgba(2555,146,5,1) 83%); */
-    /* background: linear-gradient(-25deg, #ff9205 -50%, black 53.38%); */
     background:
         repeating-linear-gradient(
             -45deg,
@@ -117,7 +115,6 @@ body {
             #f7a73e 50%
         ),linear-gradient(#292826, #47433b),
         linear-gradient(#292826, #ff9205, #292826);
-        /* radial-gradient(#000000 5%, #ff9205); */
     background-blend-mode: multiply;
     background-size: 100px 100px, 100px 100px, 100px 100px, 100% 100%, 100% 100%;
     position: relative;
